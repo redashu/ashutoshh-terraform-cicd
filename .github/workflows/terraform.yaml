@@ -12,4 +12,12 @@ jobs:
     steps: # what exactly you want to run in ubuntu machine 
     - name: hello world printing 
       run: echo "Hello world"
+
+    - name: installing terraform 
+      uses: hashicorp/setup-terraform@v3
+
+    - name: verify terraform installation 
+      run: terraform version 
+
+
    
