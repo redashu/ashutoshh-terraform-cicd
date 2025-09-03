@@ -29,6 +29,14 @@ jobs:
       run: | 
         echo "Hello ${{ secrets.AWS_ACCESS_KEY }}"
         ls -al
+    - name: running terraform code 
+      run: | 
+        ls -al
+        cd ec2
+        terraform init 
+        sleep 1
+        terrform plan 
+        terraform  apply --auto-approve 
 
 
    
