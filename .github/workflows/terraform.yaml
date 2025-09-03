@@ -20,6 +20,9 @@ jobs:
 
     - name: verify terraform installation 
       run: terraform version 
+    # using github action to copy code in runner 
+    - name: using checkout action 
+      uses: actions/checkout@v5
 
     # access data 
     - name: checking data
