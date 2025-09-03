@@ -47,6 +47,7 @@ jobs:
   # stage 2 with ansible details
   infra-configDeploy:
     runs-on: ubuntu-latest
+    needs: infra-build
     steps: # what exactly you want to run in ubuntu machine for ansible
     - name: Install ansible 
       run: | 
