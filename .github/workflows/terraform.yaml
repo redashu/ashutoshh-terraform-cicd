@@ -41,7 +41,7 @@ jobs:
         cd ec2
         terraform init 
         sleep 1
-        terrform plan 
+        terraform plan 
         terraform  apply --auto-approve 
 
 
