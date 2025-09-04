@@ -1,6 +1,6 @@
 ---
 - name: Setup Apache HTTPD on Amazon Linux
-  hosts: web1   # change to your inventory group or host
+  hosts: hello   # change to your inventory group or host
   become: yes         # escalate privilege (sudo)
 
   tasks:
