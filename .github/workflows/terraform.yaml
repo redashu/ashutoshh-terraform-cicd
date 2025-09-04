@@ -48,7 +48,10 @@ jobs:
       uses: actions/upload-artifact@v4
       with:
         name: ashu-artifact
-        path: ec2/ip.txt
+        path: |
+          ec2/ip.txt
+          ec2/ashu-privateKey.pem
+          ansible
   
   # stage 2 with ansible details
   infra-configDeploy:
