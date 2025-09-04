@@ -4,7 +4,7 @@ name: Ashutoshh terraform workflow
 # when there is a push happen in master branch pipeline gonna trigger
 on: 
   push:
-    branches: [ "master1" ]  
+    branches: [ "master" ]  
     paths-ignore:
       - "README.md"
 # jobs what actions we are looking for 
