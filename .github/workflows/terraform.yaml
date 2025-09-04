@@ -4,7 +4,9 @@ name: Ashutoshh terraform workflow
 # when there is a push happen in master branch pipeline gonna trigger
 on: 
   push:
-    branches: [ "master" ]  
+    branches: [ "master1" ]  
+    paths-ignore:
+      - "README.md"
 # jobs what actions we are looking for 
 jobs:
 # stage 1 with terraform details 
@@ -73,7 +75,9 @@ jobs:
     - name: verify data 
       run: |
         ls -a
-        cat ip.txt 
+        ls -al ec2 
+        ls -al ansible 
+        cat ec2/ip.txt 
 
 
     
